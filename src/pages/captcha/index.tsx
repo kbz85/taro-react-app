@@ -2,7 +2,8 @@
 // 图片url
 // 小卡片位置
 import { View } from "@tarojs/components";
-import { ReactNode } from "react";
+import { ReactNode, useState } from "react";
+import './index.scss';
 
 interface IvertifyProp {
   /**
@@ -51,16 +52,16 @@ export default ({
   onRefresh,
 }: IvertifyProp) => {
   function handleRefresh() {}
-  const textTip = ''
-  const sliderClass = ''
+  const [sliderClass, setSliderClass] = useState('slider-container');
+  const [textTip, setTextTip] = useState('123');
   return (
-    <View className='vertifyWrap'>
-      <View className='canvasArea'>
-        <canvas width={width} height={height}></canvas>
-        <canvas className='block' width={width} height={height}></canvas>
+    <View className='vertify-wrap'>
+      <View className='canvas-area' style={`width: ${width}px; height: ${height}px;`}>
+        <canvas className='canvas' width={width} height={height}></canvas>
+        <canvas className='canvas block' width={width} height={height}></canvas>
       </View>
-      <View className={sliderClass}>
-        <View className='sliderMask'>
+      <View className={sliderClass}  style={`width: ${width}px;`}>
+        <View className='slider-mask'>
           <View className='slider'>
             <View className='sliderIcon'>&rarr;</View>
           </View>

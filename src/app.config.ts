@@ -1,7 +1,7 @@
 export default defineAppConfig({
   pages: [
+    'pages/captcha/index',
     'pages/index/index',
-    'pages/captcha/index'
   ],
   window: {
     backgroundTextStyle: 'light',

@@ -1,1 +1,11 @@
-@import '@nutui/nutui-react-taro/dist/style.css'
+@import '@nutui/nutui-react-taro/dist/style.css';
+@import 'tailwindcss/base';
+@import 'tailwindcss/utilities';
+@import 'tailwindcss/components';
+html {
+  font-size: 40px !important;
+}
+
+taro-view-core {
+  @apply box-border;
+}
