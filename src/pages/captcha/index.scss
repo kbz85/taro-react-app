@@ -2,8 +2,14 @@
   @apply relative;
   .canvas-area {
     @apply relative w-full h-40;
-    .canvas {
+    .canvas-1, .canvas-2, .puzzle-piece {
       @apply absolute top-0 left-0 w-full h-full bg-slate-50;
+    }
+    .canvas-1 {
+      @apply z-50;
+    }
+    .puzzle-piece {
+      @apply z-[999];
     }
   }
   .slider-container {
