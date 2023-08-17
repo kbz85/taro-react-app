@@ -56,11 +56,11 @@ export default ({
   const [textTip, setTextTip] = useState('123');
   return (
     <View className='vertify-wrap'>
-      <View className='canvas-area' style={`width: ${width}px; height: ${height}px;`}>
-        <canvas className='canvas' width={width} height={height}></canvas>
-        <canvas className='canvas block' width={width} height={height}></canvas>
+      <View className='canvas-area'>
+        <canvas className='canvas'></canvas>
+        <canvas className='canvas block'></canvas>
       </View>
-      <View className={sliderClass}  style={`width: ${width}px;`}>
+      <View className={sliderClass}>
         <View className='slider-mask'>
           <View className='slider'>
             <View className='sliderIcon'>&rarr;</View>
@@ -69,7 +69,7 @@ export default ({
         <View className='sliderText'>{textTip}</View>
       </View>
       <View className='refreshIcon' onClick={handleRefresh}></View>
-      <View className='loadingContainer'>
+      <View className='loading-container'>
         <View className='loadingIcon'></View>
         <span>加载中...</span>
       </View>

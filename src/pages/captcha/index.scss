@@ -1,15 +1,19 @@
 .vertify-wrap {
   @apply relative;
   .canvas-area {
-    @apply relative inline-block;
+    @apply relative w-full h-40;
     .canvas {
-      @apply absolute top-0 left-0 bg-slate-50;
+      @apply absolute top-0 left-0 w-full h-full bg-slate-50;
     }
   }
   .slider-container {
-    @apply relative bg-slate-50 text-center h-10 leading-10 mt-4 border border-solid border-[#e4e7eb];
+    @apply relative bg-slate-50 text-center w-full h-10 leading-10 mt-4 border border-solid border-[#e4e7eb];
     .slider-mask {
       @apply absolute top-0 left-0 w-[calc(100%/8)] h-full shadow-xl border-4 border-solid border-[#e4e7eb];
     }
+  }
+
+  .loading-container {
+    @apply hidden;
   }
 }

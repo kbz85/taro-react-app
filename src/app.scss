@@ -3,7 +3,7 @@
 @import 'tailwindcss/utilities';
 @import 'tailwindcss/components';
 html {
-  font-size: 40px !important;
+  @apply text-base;
 }
 
 taro-view-core {
